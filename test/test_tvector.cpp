@@ -148,7 +148,7 @@ TEST(TVector, vectors_with_different_size_are_not_equal)
 {
 	TVector<int> v(4);
 	TVector<int> v1(10);
-	EXPECT_NE(v, v1);
+	EXPECT_NE(1, v == v1);
 }
 
 TEST(TVector, can_add_scalar_to_vector)
